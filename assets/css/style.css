@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* * {
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+ */
+/* body {
+    height: 100vh;
+}
+ */
+/* .container {
+    padding: 40px;
+} */
+
+@media (min-width: 1536px) {
+    .container-center {
+      width: 100%;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navs a {
+    color: #000;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.main {
+    padding-top: 70px;
+    /* padding-right: 5    0px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-desc h1 {
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.main-desc h1 span {
+    color: #FF8A56;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.main-desc h4 {
+    padding-top: 27px;
+    color: #666666;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+
+.main-desc_buttons {
+    padding-top: 38px;
+}
+.call {
+    background-color: #000;
+    color:#fff;
+    height: 58px;
+    width: 151px;
+}
+
+.dlcv {
+    height: 58px;
+    width: 221px;
+    background-color: #fff;
+    border: none;
+}
+
+.trustedby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trustedby h5 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.trustedby-logos {
+    padding-top: 45px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services {
+    padding-top: 140px;
+    width: 100%;
+}
+
+.services-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-head_desc {
+    width: 20%;
+    text-align: center;
+}
+
+.services-head h4 {
+    color: #FF5E69;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 44px;
+}
