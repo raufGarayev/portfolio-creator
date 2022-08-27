@@ -625,8 +625,8 @@ video {
   border-width: 1px;
 }
 
-.font-normal {
-  font-weight: 400;
+.font-bold {
+  font-weight: 700;
 }
 
 .underline {
