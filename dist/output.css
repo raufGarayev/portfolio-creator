@@ -625,6 +625,10 @@ video {
   border-width: 1px;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
