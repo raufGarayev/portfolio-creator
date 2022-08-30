@@ -5,17 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Portfolio Creator</title>
 </head>
 <body>
-    <div class="container container-normal">
+    <div class="md:container md:mx-auto">
         <div class="navbar">
             <div class="logo">
-                <p class="text-3xl font-bold">Portfolio Creator.</p>
+                <img src="./assets/img/main-logo.svg" alt="">
             </div>
-
+            <div class="burger-btn">
+                <i class="fa-solid fa-bars"></i>
+                <div class="dropdown">
+                    <a href="#">About</a>
+                    <hr>
+                    <a href="#">Services</a>
+                    <hr>
+                    <a href="#">Projects</a>
+                    <hr>
+                    <a href="#">Blog</a>
+                    <hr>
+                    <a href="#">Book a call</a>
+                </div>
+            </div>
             <div class="navs">
                 <a href="#">About</a>
                 <a href="#">Services</a>
@@ -24,12 +37,16 @@
                 <a href="#">Book a call</a>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
+
         </div>
 
         <div class="main">
             <div class="main-desc">
-                <h1><span>I design products<br></span> that delight and<br> inspire people.</h1>
-                <h4>Hi! I’m Jake, a product designer based in Berlin. I create<br> user-friendly interfaces for fast-growing startups.</h4>
+                <div class="main-desc_texts">
+                    <h1 id="vis-main-desc" class="text-7xl font-bold"><span>I design products<br></span> that delight and<br> inspire people.</h1>
+                    <h1 id="hidden-main-desc" class="text-7xl font-bold"><span>I design products</span> that delight and inspire people.</h1>
+                    <h4>Hi! I’m Jake, a product designer based in Berlin. I create<br> user-friendly interfaces for fast-growing startups.</h4>
+                </div>
                 <div class="main-desc_buttons">
                     <button class="call">Book a call</button>
                     <button class="dlcv">Download CV <i class="fa-solid fa-arrow-right"></i></button>
@@ -54,11 +71,385 @@
             <div class="services-head">
                 <h4>S E R V I C E S</h4>
                 <div class="services-head_desc">
-                    <h2>Design that solves problems, one product at a time.</h2>
+                    <h2 class="text-2xl font-bold">Design that solves problems, <br> one product at a time.</h2>
                 </div>
             </div>
         </div>
+        <div class="cards">
+            <div class="card-left">
+                <img src="./assets/img/card1.svg" alt="">
+                <div class="card-header"><p>What I can do for you</p></div>
+                <div class="card-desc"><p>Faster, better products that your users love. Here's all the services I provide:</p></div>
+                <div class="card-list">
+                    <ul>
+                        <li>Design Strategy</li>
+                        <li>Web and Mobile App Design</li>
+                        <li>Front-end Development</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-middle">
+                <img src="./assets/img/card2.svg" alt="">
+                <div class="card-header"><p>Applications I'm fluent in</p></div>
+                <div class="card-desc"><p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</p></div>
+                <div class="card-list">
+                    <ul>
+                        <li>Sketch</li>
+                        <li>Webflow</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-right">
+                <img src="./assets/img/card3.svg" alt="">
+                <div class="card-header"><p class="font-bold">What you can expect</p></div>
+                <div class="card-desc"><p>I design products that are more than pretty. I make them shippable and usable.</p></div>
+                <div class="card-list">
+                    <ul>
+                        <li>Clean and functional</li>
+                        <li>Device and user friendly</li>
+                        <li>Efficient and maintainable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="projects-info">
+                <div class="projects-info_desc">
+                    <p id="projects">P R O J E C T S</p>
+                    <p id="bring-results" class="text-6xl font-bold">I bring results.<br> My clients are proof.</p>
+                </div>
+
+                <div class="projects-info_btn">
+                    <button>View all projects</button>
+                </div>
+            </div>
+
+            <div class="projects-slider">
+                <div id="slider-left" class="projects-slider_cards-left">
+                    <img src="./assets/img/project-card1.png" alt="">
+                    <div class="projects-slider_card-header">
+                        <p id="project-card-header">BRANDING</p>
+                        <p id="project-card-desc">Soulful Rebrand</p>
+                        <button>View Project &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div id="slider-middle" class="projects-slider_cards-middle">
+                    <img src="./assets/img/project-card2.png" alt="">
+                    <div class="projects-slider_card-header">
+                        <p id="project-card-header">PRODUCT DESIGN</p>
+                        <p id="project-card-desc">Datadash Product design</p>
+                        <button>View Project &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div id="slider-right" class="projects-slider_cards-right">
+                    <img src="./assets/img/project-card3.png" alt="">
+                    <div class="projects-slider_card-header">
+                        <p id="project-card-header">WEB DESIGN</p>
+                        <p id="project-card-desc">Maize Website Design</p>
+                        <button>View Project &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-slider-btns">
+                <button id="slide-left"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="slide-right"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="blogs">
+            <div class="blogs-header">
+                <p id="blogs">BLOGS</p>
+                <p id="latest-blogs" class="text-2xl font-bold">Latest Blogs</p>
+                <button id="vis-view-all">View all <i class="fa-solid fa-arrow-right"></i></button>
+                <button id="hidden-view-all">View all <p><i class="fa-solid fa-arrow-down"></i></p></button>
+            </div>
+            <div class="blogs-links">
+                <div class="blogs-links_article">
+                    <div class="blogs-links_article-date">
+                        <p>April 16, 2021 .6mins</p>
+                    </div>
+                    <div class="blogs-links_article-desc">
+                        <p>Design tips for designers, that cover <br> everything you need</p>
+                    </div>
+                    <div class="blogs-links_article-btn">
+                        <button>Read the article <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="blogs-links_article-hr"></div>
+                </div>
+                <div class="blogs-links_article">
+                    <div class="blogs-links_article-date">
+                        <p>April 16, 2021 .6mins</p>
+                    </div>
+                    <div class="blogs-links_article-desc">
+                        <p>Design tips for designers, that cover <br> everything you need</p>
+                    </div>
+                    <div class="blogs-links_article-btn">
+                        <button>Read the article <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="blogs-links_article-hr"></div>
+                </div>
+                <div class="blogs-links_article">
+                    <div class="blogs-links_article-date">
+                        <p>April 16, 2021 .6mins</p>
+                    </div>
+                    <div class="blogs-links_article-desc">
+                        <p>Design tips for designers, that cover <br> everything you need</p>
+                    </div>
+                    <div class="blogs-links_article-btn">
+                        <button>Read the article <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="blogs-links_article-hr"></div>
+                </div>
+                <div class="blogs-links_article">
+                    <div class="blogs-links_article-date">
+                        <p>April 16, 2021 .6mins</p>
+                    </div>
+                    <div class="blogs-links_article-desc">
+                        <p>Design tips for designers, that cover <br> everything you need</p>
+                    </div>
+                    <div class="blogs-links_article-btn">
+                        <button>Read the article <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="blogs-links_article-hr"></div>
+                </div>
+                <div class="blogs-links_article">
+                    <div class="blogs-links_article-date">
+                        <p>April 16, 2021 .6mins</p>
+                    </div>
+                    <div class="blogs-links_article-desc">
+                        <p>Design tips for designers, that cover <br> everything you need</p>
+                    </div>
+                    <div class="blogs-links_article-btn">
+                        <button>Read the article <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="blogs-links_article-hr"></div>
+                </div>
+            </div>
+        </div>
+        <div class="product-designer">
+            <div class="product-designer_header">
+                <div class="product-designer_header-main">
+                    <p id="product_designer" class="text-2xl font-bold">PRODUCT DESIGNER</p>
+                    <p class="text-6xl font-bold">That's me!</p>
+                </div>
+                <div class="product-designer_header-desc">
+                    <p class="text-2xl font-normal">Over the past 12 years, I've worked with a diverse range of clients, from startups to Fortune 500 companies. I love crafting interfaces that delight users and help businesses grow.</p>
+                </div>
+            </div>
+            <div class="product-designer_images">
+                <div class="product-designer_images-left"><img src="./assets/img/products1.png" alt=""></div> 
+                <div class="product-designer_images-middle"><img src="./assets/img/products2.png" alt=""></div> 
+                <div class="product-designer_images-right">
+                    <img src="./assets/img/products3.png" alt="">
+                    <img src="./assets/img/products4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="education">
+                <img src="./assets/img/education.svg" alt="">
+                <div class="education-list">
+                    <div class="education-uni">
+                        <p id="uniname">Stanford University</p>
+                        <p id="unifaculty">MSc (Human Computer Interaction)</p>
+                    </div>
+                    <div class="education-dates">
+                        <p>• 2013-2015</p>
+                    </div>
+                    <div class="education-link">
+                        <img src="./assets/img/arrow-up-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="education-list">
+                    <div class="education-uni">
+                        <p id="uniname">MIT Summer School</p>
+                        <p id="unifaculty">UX Training Bootcamp</p>
+                    </div>
+                    <div class="education-dates">
+                        <p>• 2013-2014</p>
+                    </div>
+                    <div class="education-link">
+                        <img src="./assets/img/arrow-up-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="education-list">
+                    <div class="education-uni">
+                        <p id="uniname">California State University</p>
+                        <p id="unifaculty">BSc in Software Engineering</p>
+                    </div>
+                    <div class="education-dates">
+                        <p>• 2009-2012</p>
+                    </div>
+                    <div class="education-link">
+                        <img src="./assets/img/arrow-up-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="./assets/img/work-experience.svg" alt="">
+                <div class="work-list">
+                    <div class="work-name">
+                        <p id="company-name">SpaceFleet</p>
+                        <p id="worked-as">Senior Product Designer</p>
+                    </div>
+                    <div class="work-dates">
+                        • April 2019 - Current
+                    </div>
+                    <div class="work-link">
+                        <img src="./assets/img/arrow-up-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="work-list">
+                    <div class="work-name">
+                        <p id="company-name">MusicMash</p>
+                        <p id="worked-as">Information Architect</p>
+                    </div>
+                    <div class="work-dates">
+                        • April 2016 - May 2017
+                    </div>
+                    <div class="work-link">
+                        <img src="./assets/img/arrow-up-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="work-list">
+                    <div class="work-name">
+                        <p id="company-name">Kingdom</p>
+                        <p id="worked-as">UI Designer</p>
+                    </div>
+                    <div class="work-dates">
+                        • April 2016 - May 2017
+                    </div>
+                    <div class="work-link">
+                        <img src="./assets/img/arrow-up-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonials-header">
+                <p id="testimonials">TESTIMONIALS</p>
+                <p id="testimonials-header" class="text-2xl font-bold">Word on the street</p>
+                <img src="./assets/img/testimonials.png" alt="">
+            </div>
+            <div class="testimonials-desc">
+                <img src="./assets/img/quote.svg" alt="">
+                <p id="quote-desc">Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved complex problems with brilliant design.</p>
+                <div class="testimonials-desc_author">
+                    <div class="author-name">
+                        <p id="author">John Frankin</p>
+                        <p id="who-is-author">Founder, Double Bunch</p>
+                    </div>
+                    <div class="author-btns">
+                        <button><i class="fa-solid fa-angle-left"></i></button>
+                        <button><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header">
+                <p id="faq">FAQ</p>
+                <p id="faq-desk" class="text-2xl font-bold">Frequently asked questions</p>
+            </div>
+            <div class="faq-questions">
+                <div class="faq-questions_left">
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>What type of projects do you take on?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>What is your hourly rate?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>What time-zone do you work in?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>What is the typical timeline for a project?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                </div>
+                <div class="faq-questions_right">
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>How do you charge for projects ?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>What does your design process look like?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>What metrics do you use to measure success?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                    <div class="questions">
+                        <div class="the-question">
+                            <p>What if I need help after the project is complete?</p>
+                        </div>
+                        <div class="question-answer"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="faq-hr"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-header">
+                <p id="kickass" class="text-2xl font-bold">Ready to make something kickass?</p>
+                <p id="lets-call" class="text-2xl font-bold">Let's get on a call.</p>
+            </div>
+            <div class="footer-mid">
+                <div class="footer-mid_left">
+                    <img src="./assets/img/white-logo.svg" alt="">
+                    <p id="footer-adress">4353 Delaware Avenue, San Francisco, USA</p>
+                    <p id="footer-mail"><i class="fa-solid fa-envelope"></i> hi@thefolio.com</p>
+                </div>
+                <div class="footer-mid_links">
+                    <div class="footer-mid_links-left">
+                        <p>About</p>
+                        <p>Contact</p>
+                        <p>Dribbble</p>
+                    </div>
+                    <div class="footer-mid_links-middle">
+                        <p>Services</p>
+                        <p>Blog</p>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="footer-mid_links-right">
+                        <p>Experience</p>
+                        <p>Projects</p>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <p>© All rights reserved. <a href="">Sumit Hegde</a>. Powered by &nbsp;<a href="">Webflow</a> &nbsp;<a href="">/ Image License Info</a> &nbsp;<a href="#">/ Instructions</a> &nbsp;<a href="#">/ Changelog</a> &nbsp;<a href="#">/ Style Guide</a></p>
+            </div>
+        </footer>
     </div>
-    
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
